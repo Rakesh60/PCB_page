@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Form</title>
+
+
+</head>
+
+<body>
+<center>
+    
+    <h1>
+        This Form has validation 
+    </h1>
+    <h2>
+        Fill carefully
+    </h2>
+</center>
+
+
+    <!--This IS Form Part-->
+
+
+    <form method="get" action="/action.php">
+        <table class="form" border="0" cellspacing="0" align="center" bgcolor="lightgreen" cellpadding="10px">
+            <caption>
+                <h1 class="title" style="background-color: aquamarine;">
+                    <font color="red">Admission form</font>
+                </h1>
+            </caption>
+
+            <tr>
+
+                <td><label for="fname">First Name</label></td>
+                <td> <input type="text" placeholder="First_Name" id="fname" required="required"></td>
+
+            </tr>
+c
+
+
+            <tr>
+                <td><label for="lname">Last Name</label></td>
+                <td> <input type="text" placeholder="Last_Name" id="lname" required="required"> </td>
+            </tr>
+            <tr>
+                <td><label for="Addr">Address</label></td>
+                <td><input type="text" id="Addr" placeholder="Adresss" required="required"></td>
+
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td>
+                    <input type="radio" id="mm" value="Male" name="gender" required="required">
+                    <label for="mm">Male</label>
+
+                    <input type="radio" id="fm" value="Female" name="gender" required="required">
+                    <label for="fm">Female</label>
+                </td>
+
+
+            </tr>
+
+            <tr>
+
+                <td><label for="state">State</label></td>
+                <td> <select name="state" id="state" class="form-control" required="required">
+                        <option value="" selected="selected" disabled="disabled">Select your State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select></td>
+
+
+
+            </tr>
+            <tr>
+
+                <td><label for="Qualification">Qualification Level</label></td>
+                <td> <select name="Qualification" id="Qualification" class="Qualification">
+                        <option selected="selected" disabled="disabled">Choose Your Qualification</option>
+
+                        <option value="12">10+2 Science PCM</option>
+                        <option value="Vocational qualification">10+2 Science PCB</option>
+                        <option value="Bachelor's degree">10+2 Science PCMB</option>
+                        <option value="Master's degree">10+2 Commerce Accountancy</option>
+                        <option value="Doctorate or higher">10+2 Commerce Economics</option>
+                    </select></td>
+
+
+
+            </tr>
+            <tr>
+                <td><label for="email">Email</label>
+                </td>
+                <td><input type="email" placeholder="e.g:abcd@gmail.com" id="email" required="required"></td>
+
+            </tr>
+            <tr>
+                <td><label for="Mobile">Mobile Number</label>
+                </td>
+                <td><input type="tel" id="Mobile" name="Mobile" pattern="[0-9]{5}[0-9]{5}" placeholder="99999-88888">
+                </td>
+
+            </tr>
+            <tr>
+                <td><label for="DOB">DOB</label></td>
+                <td><input type="date" id="DOB"></td>
+
+
+            </tr>
+
+            <tr>
+                <td><label for="Degree">Degree</label></td>
+                <td>
+                    <input type="radio" id="B.A" value="B.A" name="Degree" required="required">
+                    <label for="B.A">B.A</label>
+
+                    <input type="radio" id="B.Sc" value="B.Sc" name="Degree" required="required">
+                    <label for="B.Sc">B.Sc</label>
+
+                    <input type="radio" id="B.Com" value="B.Com" name="Degree" required="required">
+                    <label for="B.Com">B.Com</label>
+                    </select>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td><label for="Course">Course</label></td>
+                <td> <select name="Course" id="Course">
+                        <option value="" selected="selected" disabled="disabled">Choose here</option>
+                        <option value="B.Sc Phy">B.Sc Physics</option>
+                        <option value="B.Sc Phy">B.Sc Chemistry</option>
+                        <option value="B.Sc Phy">B.Sc Mathematics</option>
+                        <option value="B.Sc Phy">B.Sc Biology</option>
+                        <option value="B.Com">B.Com</option>
+                        <option value="B.A">B.A</option>
+
+                    </select>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="myfile">Photo</label>
+                    <input type="file" id="myfile" name="myfile">
+                </td>
+                <td>
+                    <label for="myfile">Signature</label>
+                    <input type="file" id="myfile" name="myfile">
+                </td>
+                </td>
+
+
+            </tr>
+
+            
+            <tr>
+
+                <td><input type="submit" class="button"></td>
+                <td><input type="reset" class="button"></td>
+            </tr>
+
+
+
+
+        </table>
+
+
+
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>
